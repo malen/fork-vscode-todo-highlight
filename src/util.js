@@ -19,6 +19,47 @@ var DEFAULT_KEYWORDS = {
         color: '#fff',
         backgroundColor: '#f06292',
         overviewRulerColor: 'rgba(240,98,146,0.8)'
+    },
+    "NOTE:": {
+        text: "NOTE:",
+        color: '#fff',
+        description: '用于提醒一些重要的提示或信息，通常是对代码的解释、设计决策或额外的上下文信息',
+        backgroundColor: '#f06292',
+        overviewRulerColor: 'rgba(214, 245, 14, 0.96)'
+    },
+    "REVIEW:": {
+        text: "REVIEW:",
+        color: '#fff',
+        backgroundColor: '#f06292',
+        overviewRulerColor: 'rgba(29, 106, 229, 0.8)'
+    },
+    "HACK:": {
+        text: "HACK:",
+        color: '#fff',
+        description: '用于标记临时解决方案或不太优雅的实现，通常是为了应急或者绕过某些问题',
+        backgroundColor: '#f06292',
+        overviewRulerColor: 'rgba(159, 218, 10, 0.94)'
+    },
+    "OPTIMIZE:": {
+        text: "OPTIMIZE:",
+        color: '#fff',
+        description: '提醒代码可以进行性能优化的地方',
+        backgroundColor: '#f06292',
+        overviewRulerColor: 'rgba(24, 92, 123, 0.8)'
+    },
+    "DEPRECATED:": {
+        text: "DEPRECATED:",
+        color: '#fff',
+        description: '用于标记不再推荐使用的功能或代码，通常是提醒开发人员不要再使用某些过时的代码或API',
+        backgroundColor: '#f06292',
+        overviewRulerColor: 'rgba(117, 115, 115, 0.93)'
+    },
+    "BUG:": {
+        text: "BUG:",
+        color: '#fff',
+        description: '用来标记可能存在的问题或已知的 bug，提醒开发人员修复',
+        backgroundColor: '#f06292',
+        overviewRulerColor: 'rgba(241, 44, 50, 0.8)'
     }
 };
 
@@ -114,7 +155,7 @@ function searchAnnotations(workspaceState, pattern, callback) {
             });
 
         }
-        
+
     }, function (err) {
         errorHandler(err);
     });
